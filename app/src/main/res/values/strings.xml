@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">AlkoPlan</string>
+    <string name="login">LOGIN</string>
+    <string name="registration">REGISTRATION</string>
+    <string name="title_activity_login">Login</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="passwordAgain">PASSWORD AGAIN</string>
+    <string name="registry">REGISTRY</string>
+    <string name="birthday">BIRTHDAY</string>
+    <string name="home">Home</string>
+    <string name="createevent">Create Event</string>
+    <string name="userinfo">UserInfo</string>
+    <string name="search">Search</string>
+    <string name="notification">Notification</string>
+    <string name="alkoplan">AlkoPlan</string>
+
+    <string name="bar_21">Bar 21</string>
+    <string name="sasazu_restaurace">SaSaZu</string>
+    <string name="nadrazka">Nadrazka</string>
+    <string name="about_sasazu">
+        <b>Info</b> \n
+        This Bar is placed in the middle of beautiful
+        city of Prague. Very cheap prices and
+        beautiful bartenders will force you to love
+        this place
+        <b>Menu</b> \n
+        Pivo - 54kč \n
+        Řízky - 220kč \n
+        <b>Address</b> \n
+        Pštrosova 220, Praha\n
+    </string>
+    <string name="about_bar21">
+        <b>Info</b> \n
+        Come and visit one of the oldest gay bars in the center of Prague
+        with a wide range of alcohol. We offer a quiet and pleasant
+        environment ideal as the beginning of a party evening.
+        this place \n
+        <b>Menu</b> \n
+        Pivo - 50kč \n
+        Řízky - 220kč \n
+    </string>
+    <string name="about_nadrazka">
+        <b>Info</b> \n
+        Legendary railway station in Prague. On the tap Pilsen and Staropramen.
+        To eat things from the grill. In addition to the indoor seating,
+        there are two gardens, one on the side of the building and the other
+        smaller directly on the platform.
+        <b>Menu</b>
+        Pivo - 25kč
+        Řízky - 100kč
+        <b>Address</b>
+        Václavkova 1, 160 00 Praha 6
+    </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next_event">Last Created</string>
+    <string name="visit">VISIT</string>
+    <string name="place">Place</string>
+    <string name="when">Date</string>
+    <string name="Time">Time</string>
+    <string name="Date">Date</string>
+    <string name="Description">Description</string>
+    <string name="Title">Title</string>
+    <string name="infoNext">This will be the best event ever</string>
+    <string name="your_next_event_will_be_right_here">Your next event will be right here</string>
+    <string name="events_history">Events List</string>
+    <string name="settings_desc">
+        Good day, user! \n
+        On behalf of the PragueAlcoholyx team, \n
+        we would like to thank you \n
+        for using our alcohol trip planning app. \n
+        We hope you get a pleasant user experience, \n
+        but if you suddenly come across a bug, \n
+        email us alcoholyx@beer.kz \n
+    </string>
+    <string name="logout">Logout</string>
+    <string name="praguealcoholyx_2022">PragueAlcoholyx© 2022</string>
+    <string name="alreadyHave">Already have account?</string>
+    <string name="dontHave">Do not have account yet?</string>
+    <string name="EventDetail">Event Detail</string>
+    <string name="placephoto">placePhoto</string>
+    <string name="PlaceDetail">Place Detail</string>
+    <string name="address">Václavkova 1, 160 00 Praha 6</string>
+    <string name="placeNextEvent">Here will be place of your next event</string>
+    <string name="timeOfNextEvent">Here will be time</string>
+    <string name="logo">logo</string>
+    <string name="more">More</string>
+</resources>

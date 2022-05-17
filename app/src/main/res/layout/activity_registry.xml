@@ -1,0 +1,111 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Registry">
+
+    <EditText
+        android:id="@+id/editTextUName"
+        android:layout_width="229dp"
+        android:layout_height="63dp"
+        android:background="@drawable/button_design"
+        android:ems="10"
+        android:maxLength="15"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.871"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextPwd"
+        android:layout_width="229dp"
+        android:layout_height="63dp"
+        android:maxLength="15"
+        android:background="@drawable/button_design"
+        android:ems="10"
+        android:hint="@string/password"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/editTextUName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPwd2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextPwd2"
+        android:layout_width="229dp"
+        android:layout_height="63dp"
+        android:maxLength="15"
+        android:background="@drawable/button_design"
+        android:ems="10"
+        android:hint="@string/passwordAgain"
+        android:textColorHint="@color/gray"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/editTextBirthday"
+        app:layout_constraintTop_toBottomOf="@id/editTextPwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextBirthday"
+        android:layout_width="229dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_design"
+        android:hint="@string/birthday"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/white"
+        android:focusable="false"
+        android:clickable="false"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/editTextPwd2"
+        app:layout_constraintBottom_toTopOf="@+id/registry_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/registry_button"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/button_design"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/registry"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/haveAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:text="@string/alreadyHave"
+        app:layout_constraintTop_toBottomOf="@id/registry_button"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

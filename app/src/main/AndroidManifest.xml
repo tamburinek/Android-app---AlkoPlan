@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.alkoplan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AlkoPlan">
+        <activity
+            android:name=".PlaceDetail"
+            android:exported="false"
+            android:theme="@style/Theme.AlkoPlan.NoActionBar" />
+
+        <receiver
+            android:name=".Notification"
+            android:enabled="true" />
+
+        <activity
+            android:name=".Loading"
+            android:exported="false"
+            android:theme="@style/Theme.AlkoPlan.NoActionBar" />
+        <activity
+            android:name=".Settings"
+            android:exported="false"
+            android:theme="@style/Theme.AlkoPlan.NoActionBar" />
+        <activity
+            android:name=".EventDetail"
+            android:exported="false"
+            android:theme="@style/Theme.AlkoPlan.NoActionBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <activity
+            android:name=".Profile"
+            android:exported="false"
+            android:theme="@style/Theme.AlkoPlan.NoActionBar" />
+        <activity
+            android:name=".Home"
+            android:exported="false"
+            android:theme="@style/Theme.AlkoPlan.NoActionBar" />
+        <activity
+            android:name=".Registry"
+            android:exported="false"
+            android:theme="@style/Theme.AlkoPlan.NoActionBar" />
+        <activity
+            android:name=".AddNewEvent"
+            android:exported="false"
+            android:theme="@style/Theme.AlkoPlan.NoActionBar" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.AlkoPlan.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:icon="@drawable/alkoplan_icon"
+            android:exported="true"
+            android:theme="@style/Theme.AlkoPlan.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
